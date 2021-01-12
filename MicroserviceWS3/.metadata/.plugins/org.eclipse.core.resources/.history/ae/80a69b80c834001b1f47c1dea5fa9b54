@@ -1,0 +1,9 @@
+server:
+  port: 9091
+  
+spring:  application:    name: CLOUD-GATEWAY
+eureka:  client:
+    register-with-eureka: true    fetch-registry: true
+    service-url:      defaultZone: http://localhost:8004/eureka
+    instance:
+      hostname: localhost
